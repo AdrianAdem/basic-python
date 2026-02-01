@@ -1,9 +1,17 @@
 def main():
-    name = input("What's your name? ").strip().title()
-    greet(name)
+    # Output using our own function
+    name = input("Enter your name: ").strip().title()
+    
+    # Call the function
+    if name:
+        hello(name)
+    else:
+        hello()
 
-def greet(to="world"):
-    print(f"hello, {to}")
-
+# Define the function
+def hello(to="World"):
+    print(f"Hello, {to}!")
+    
+# Call the main function  
 if __name__ == "__main__":
     main()
