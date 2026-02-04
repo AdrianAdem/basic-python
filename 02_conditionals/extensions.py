@@ -1,4 +1,4 @@
-file = input("File name: ")
+file = input("File name: ").strip().lower()
 
 match file.split(".")[-1]:
     case "gif":
